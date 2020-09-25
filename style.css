@@ -15,7 +15,7 @@
       margin: 0 auto;
       text-align: center;
   }
-  img{
+  img {
     width: 1000px;
     height: 500px;
   }
@@ -24,3 +24,7 @@
       top: 0;
       z-index: 5;
   }
+.p1 {
+    display: grid;
+    grid-template-columns: auto auto;
+}

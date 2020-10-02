@@ -1,48 +1,149 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/83a2ef4280.js" crossorigin="anonymous"></script>
+    <title>Document</title>
 </head>
+
 <body>
-    <div class="grid-container">
-        <nav class="nav">
-            <div class="grid-item">
-                <button><a href="#cos">Koniec</a></button>
-                <button><a href="#photo">Photo</a></button>
-                <button><a href="#art">Artykul</a></button>
-                <button><a href="#lor">Lorem</a></button>
-                <button><a href="#art-zd">Artykul + zdj</a></button>
+    
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand" href="#">
+            <i class="fas fa-american-sign-language-interpreting"></i>
+        </a>
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-house-user"></i>
+                        Home
+                        <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="fas fa-paperclip"></i>
+                        Link
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container-fluid card-margin">
+        <div class="row">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: auto;">
+                    <div class="hidden">
+                        <img src="../img/3.jpg" class="card-img-top main-img" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample1" role="button"
+                                aria-expanded="false" aria-controls="collapseExample1">
+                                Link with href
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample1">
+                            <div class="card card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of
+                                    the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-        <div class="grid-item" id="photo">
-            <h3>Photo</h3>
-            <img src="../img/7.jpg" alt="">
-            <img src="../img/8.jfif" alt="">
-            <img src="../img/9.jfif" alt="">
-            <img src="../img/10.jpg" alt="">
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: auto;">
+                    <div class="hidden">
+                        <img src="../img/3.jpg" class="card-img-top main-img" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <p>
+                            <a class="btn btn-primary" data-toggle="collapse" href="#collapseExample" role="button"
+                                aria-expanded="false" aria-controls="collapseExample">
+                                Link with href
+                            </a>
+                        </p>
+                        <div class="collapse" id="collapseExample">
+                            <div class="card card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of
+                                    the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: auto;">
+                    <div class="hidden">
+                        <img src="../img/3.jpg" class="card-img-top main-img" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3">
+                <div class="card" style="width: auto;">
+                    <div class="hidden">
+                        <img src="../img/3.jpg" class="card-img-top main-img" alt="...">
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="grid-item" id="art">
-                    <h3>Artykul</h3>
-            <div class="p1">
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptas, sit! Amet officiis quo deserunt tempora architecto eveniet. Recusandae sit error impedit, consequuntur nihil deserunt, ratione amet omnis nulla minus illum! Molestias iste, numquam cumque minima facilis commodi amet incidunt illo itaque culpa voluptatum nihil sequi inventore iure enim iusto, similique ad, debitis nulla doloremque! Similique doloribus eum aut nihil incidunt eligendi, quas dolorem quaerat excepturi sequi impedit ullam repudiandae dolore beatae quo deserunt iste possimus? Impedit, enim debitis quas nisi necessitatibus quod dolore commodi magnam voluptatibus natus asperiores, error, quidem nemo? Ratione ducimus atque ullam iure perferendis, voluptas sapiente sed. Minima assumenda esse voluptates aspernatur voluptatibus vero, pariatur laboriosam repudiandae aut. Minima impedit ut facere debitis, possimus assumenda, voluptate expedita laudantium cumque voluptatem quo quam officia dicta rem autem sit! Praesentium cupiditate suscipit voluptas aliquid deserunt modi tenetur voluptate, reiciendis dolore nesciunt veritatis, labore saepe esse numquam unde earum ducimus.</p>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis dicta nam quam tempora fuga aperiam aut impedit, est, minus, officiis ipsum iste facere! At repudiandae debitis eum suscipit cupiditate. Maxime necessitatibus eius quam ratione recusandae in iusto? Ducimus voluptate id fugiat qui, est ipsa minus, odit tempora atque sint placeat obcaecati maiores voluptatum nisi vel doloribus aspernatur deleniti officiis distinctio voluptas cumque, autem at. Deserunt dolore reiciendis debitis voluptatem dicta odit, quia officia iusto rem ad maxime soluta laboriosam nihil illo, modi hic tempore sequi eum neque. Ducimus fugiat accusamus illo repudiandae repellendus eveniet ipsam cupiditate laboriosam rerum! Rem in reprehenderit maxime culpa totam eius voluptatibus inventore hic natus deleniti? Labore laboriosam cumque illum maxime. Placeat illo nam odit ex! In corporis excepturi adipisci dicta error hic suscipit natus! Non, placeat, aspernatur quis, nam natus distinctio praesentium earum molestias sed animi fugit necessitatibus accusantium doloremque maxime. Dignissimos similique doloremque deleniti!</p>
-            </div>  
-        </div>  
-        <div class="grid-item" id="lor">
-            <h3>lorem</h3>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente quis ad esse voluptates? Iure praesentium, vero similique, reprehenderit quas soluta ex explicabo quae eveniet reiciendis labore totam repellat consequatur deleniti eum sint placeat unde corrupti et laboriosam quibusdam. Aut veniam quam sequi aliquid cupiditate amet, qui eius nihil fugiat at nobis molestiae vero temporibus reiciendis hic voluptas similique necessitatibus earum ex. Dicta delectus molestias perferendis atque aspernatur consectetur. Veritatis iste dicta unde et error commodi omnis asperiores nihil illum. Temporibus enim ex officia voluptatum animi quisquam saepe qui cum nihil doloribus! Deserunt, rem amet. Dolorum suscipit voluptates magni esse quas reprehenderit a, tenetur repellendus corporis deserunt quos veniam quidem quasi optio, sapiente delectus? Excepturi neque tenetur officiis! Nihil animi nostrum similique autem doloremque, nobis doloribus, explicabo incidunt neque, sed voluptates earum odio asperiores alias mollitia. Itaque quia, facilis porro aliquam inventore perferendis architecto velit dicta voluptas beatae, nulla doloribus similique at repudiandae maiores quasi voluptatibus nesciunt distinctio. Esse distinctio eum repellendus. Officiis fugiat, cum voluptate provident voluptatem facere tempora aut, commodi, delectus reiciendis labore omnis iste nulla molestiae dolorem a? Numquam, natus, asperiores veritatis eaque libero, voluptas beatae deserunt sint quibusdam omnis incidunt dolor possimus illo dignissimos aperiam odio consequatur praesentium dolore quia ducimus iure! Labore quisquam veritatis quia repellat repellendus eveniet consequatur placeat earum facere exercitationem excepturi reiciendis voluptate, repudiandae corporis amet quis obcaecati numquam voluptatibus nemo, distinctio maxime id voluptatem sapiente! Excepturi, voluptatum recusandae! Aut, ad soluta totam voluptatum distinctio odio omnis quidem neque deleniti harum consequuntur excepturi, in mollitia. Nobis laborum atque aut veritatis. Omnis dignissimos reiciendis ratione, sed, dicta ipsam nisi illo nobis facilis aliquid expedita deleniti rem dolor, excepturi accusamus quos doloribus maiores error optio ullam temporibus nostrum corporis. Assumenda neque reprehenderit veniam esse molestiae consequatur itaque. Nemo magni minima a rem laborum aliquid ex minus, nisi saepe! Illum, officiis maxime ullam beatae iure autem libero. Expedita veritatis facere ipsum, eum odit officiis mollitia quos molestias doloribus reprehenderit vitae, quasi dolorum. Odio cum animi earum in sequi nemo laboriosam quidem veritatis atque numquam voluptatibus aperiam distinctio, officia sit iure deserunt necessitatibus nesciunt consequatur adipisci? Debitis saepe atque vel expedita at accusantium repudiandae? Sit, quos aliquid placeat, consequuntur blanditiis omnis corrupti veritatis repellat deserunt iste qui molestiae culpa! Quis similique labore deleniti odio dolorem ullam tempore pariatur maiores nulla aut sunt eaque iste, maxime doloremque minima, culpa debitis consequuntur magnam amet totam sint! Consectetur fugiat necessitatibus dolorem est, delectus maiores, eum ipsa vel iusto recusandae non eligendi maxime totam nesciunt ipsum alias explicabo quidem odio. Nobis ut soluta vel, maxime quia laboriosam numquam quidem cum molestias eos officiis ipsum unde veniam accusantium molestiae veritatis eligendi voluptatem autem impedit eum iusto dolore odio. Rerum quas ab asperiores, quis, esse unde quae officiis dolorem distinctio eligendi ducimus possimus labore rem enim dolores, doloribus magnam vel consequuntur aspernatur? Velit cum id reprehenderit eveniet molestias sunt dolorem similique, non quis officiis cupiditate itaque omnis amet, quidem praesentium. Ipsum veritatis rerum aperiam ducimus. Nam sit architecto temporibus accusamus reiciendis, porro quaerat!</h2>
-        </div>
-        <div class="grid-item" id="art-zd">
-            <h3>Artykul + zdj</h3>
-            <h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum illo praesentium dolor numquam amet obcaecati inventore quae aliquid nisi in id repellat ex quod dolorem recusandae beatae qui necessitatibus commodi saepe alias error hic, dolore consequatur quos. Sapiente aperiam officia aliquid ipsam dolorum mollitia, labore minus dolores consectetur maiores, quam necessitatibus ex eveniet autem quas ducimus culpa earum. Voluptate illum repudiandae consectetur aperiam atque laudantium repellendus fugiat delectus debitis, veritatis quibusdam architecto non provident libero iste temporibus, quia tempora dolorum? Labore in quidem mollitia blanditiis perspiciatis assumenda odit at earum sed! Cupiditate commodi vero voluptate. Tempora ullam esse distinctio quam!</h2>
-            <img src="../img/2.jpg" alt="">
-        </div>
-      </div>
-    <div id="cos">
-        <h6>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae tempore odit id recusandae illum itaque delectus fuga animi. Quaerat placeat natus optio dolorum quibusdam quas officiis dignissimos voluptas rem possimus.</h6>
     </div>
 </body>
+
 </html>

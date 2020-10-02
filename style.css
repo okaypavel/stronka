@@ -22,7 +22,16 @@
     height: 100%;
     background-color: pink;
 }
-.icon-main{
+.icon-main1{
+    color: rgb(0, 0, 0);
+}
+.icon-main2{
+    color: rgb(0, 0, 0);
+}
+.ii{
+    background-color: pink;
+}
+#coins {
     font-size: 50px;
-    color: pink;
+    text-align: center;
 }
